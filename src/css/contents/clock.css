@@ -40,6 +40,7 @@
 .contents-clock__time__hm {
     font-size: 15em;
     text-align: right;
+    text-shadow: rgb(0, 0, 0) 10px 10px 10px;
 }
 
 .contents-clock__time__sec {
