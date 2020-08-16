@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+@import "animations.css";
+
+/* contents */
+@import "contents/search.css";
+@import "contents/menu.css";
+@import "contents/contents.css";
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    height: 100vh;
+    /* background-image: url("https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
+    /* background-color: white; */
+}
+
+.blank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blank-1 {
+    /* background-color: rgba(0, 255, 255, 0.5); */
+    height: 10%;
+}
+
+.blank-3 {
+    /* background-color: rgba(59, 226, 129, 0.5); */
+    height: 20%;
+}
+
+.text-light {
+    color: var(--white);
+}
+
+.text-dark {
+    color: var(--grey-light);
+}
+
+.showing-off {
+    display: none;
+}
+
+.greeting {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: var(--white);
+}
+
+.greeting__form,
+.greeting__span {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.greeting__input {
+    border: none;
+    background: none;
+    color: var(--white);
+    font-size: 1em;
+    text-align: center;
+    border-bottom: 0.1em solid var(--white);
+}
+
+.greeting__input::placeholder {
+    color: var(--white);
+}
+
+.greeting__input:focus::placeholder {
+    color: transparent;
+}

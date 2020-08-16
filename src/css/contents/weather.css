@@ -1,0 +1,21 @@
+.contents-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0.5em;
+    user-select: none;
+    color: var(--white);
+    font-size: 2em;
+}
+
+.contents-weather div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 33%;
+    width: 70%;
+}

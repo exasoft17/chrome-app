@@ -1,0 +1,60 @@
+.menu {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-block {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.description {
+    user-select: none;
+    margin-top: 0.5em;
+}
+
+.btn {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 1.5em;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn span {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.btn:hover span {
+    opacity: 1;
+}
+
+.selected-menu {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.selected-menu span {
+    opacity: 1;
+}
+
+.icon,
+.description {
+    pointer-events: none;
+}

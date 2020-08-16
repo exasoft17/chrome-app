@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome!</title>
+        <link rel="stylesheet" href="src/css/styles.css" />
+    </head>
+
+    <body>
+        <div class="blank-1 blank">
+            <span></span>
+        </div>
+
+        <div class="search">
+            <div class="search-block">
+                <span class="search-block__engine search-block__engine-naver showing-off"><span>N</span></span>
+                <span class="search-block__engine search-block__engine-google"><i class="fab fa-google"></i></span>
+                <form class="search-block__form search-block__form-naver showing-off" action="http://search.naver.com/search.naver" method="GET" autocomplete="off">
+                    <input class="search-block__input" type="text" name="query" />
+                </form>
+                <form class="search-block__form search-block__form-google" action="http://www.google.co.kr/search" method="GET" autocomplete="off">
+                    <input class="search-block__input" type="text" name="query" />
+                </form>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="menu-block">
+                <div class="menu-block__clock btn selected-menu" id="0">
+                    <i class="far fa-clock fa-3x menu-block__clock__icon icon"></i>
+                    <span class="menu-block__clock__span description">Clock</span>
+                </div>
+                <div class="menu-block__todo btn" id="1">
+                    <i class="far fa-list-alt fa-3x menu-block__todo__icon icon"></i>
+                    <span class="menu-block__todo__span description">To do</span>
+                </div>
+                <div class="menu-block__weather btn" id="2">
+                    <i class="fas fa-cloud-sun fa-3x menu-block__weather__icon icon"></i>
+                    <span class="menu-block__weather__span description">Weather</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="contents-clock">
+                <div class="contents-clock__time">
+                    <span class="contents-clock__time__apm text-dark">AM</span>
+                    <span class="contents-clock__time__hm text-light">00:00</span>
+                    <span class="contents-clock__time__sec text-light">00</span>
+                </div>
+                <div class="contents-clock__date">
+                    <span class="contents-clock__date__span text-light">0000년 0월 00일 월요일</span>
+                </div>
+            </div>
+            <div class="contents-todo">
+                <form class="contents-todo__form">
+                    <label class="contents-todo__label"><i class="far fa-edit fa-2x"></i></label>
+                    <input class="contents-todo__input" type="text" />
+                </form>
+                <ul class="contents-todo_list"></ul>
+            </div>
+            <div class="contents-weather">
+                <div class="contents-weather__location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="contents-weather__location__span">N/A</span>
+                </div>
+                <div class="contents-weather__temperature">
+                    <i class="fas fa-thermometer-three-quarters"></i>
+                    <span class="contents-weather__temperature__span">-</span>
+                </div>
+                <div class="contents-weather__wind">
+                    <i class="fas fa-wind"></i>
+                    <span class="contents-weather__wind__span">-</span>
+                </div>
+                <div class="contents-weather__humidity">
+                    <i class="fas fa-tint"></i>
+                    <span class="contents-weather__humidity__span">-</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="greeting">
+            <form class="greeting__form">
+                <input class="greeting__input" type="text" placeholder="Write Your Name." />
+            </form>
+            <span class="greeting__span showing-off">Welcome,</span>
+        </div>
+        <script src="src/js/search.js"></script>
+        <script src="src/js/menu.js"></script>
+        <script src="src/js/contents.js"></script>
+        <script src="src/js/clock.js"></script>
+        <script src="src/js/todo.js"></script>
+        <script src="src/js/greeting.js"></script>
+        <script src="src/js/weather.js"></script>
+        <script src="src/js/bg.js"></script>
+        <script src="https://kit.fontawesome.com/e863981bbc.js" crossorigin="anonymous"></script>
+    </body>
+</html>
